@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Be0-As-Ghz">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--投资理财-->
+        <scene sceneID="qGW-Fh-XEG">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Be0-As-Ghz" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="投资理财" image="btn_column_normal" id="ral-QR-GBg"/>
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zVc-Y2-Lrg">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="2PY-ci-sVS" kind="relationship" relationship="viewControllers" id="bXo-CS-E9z"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tve-hE-spC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-339.13043478260875" y="-831.02678571428567"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="iGC-IX-DcX">
+            <objects>
+                <viewController id="2PY-ci-sVS" customClass="HomeController" customModule="CashFlowGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pXt-Lj-hq3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="cNm-Xy-lxl"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="pd3-i4-760"/>
+                    <navigationItem key="navigationItem" id="Ad0-GE-1yK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Fl-cb-X0E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="407" y="-824"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="btn_column_normal" width="24" height="24"/>
+    </resources>
+</document>
