@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qJb-te-7ki">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home Controller-->
+        <scene sceneID="2pi-Ek-rHG">
+            <objects>
+                <viewController id="Klo-7D-Rtl" customClass="HomeController" customModule="CashFlowGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="PkQ-DC-1I7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0q5-ra-bqN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1569.5652173913045" y="-717.1875"/>
+        </scene>
+        <!--个人情况-->
+        <scene sceneID="ndc-7X-Dwk">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qJb-te-7ki" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="个人情况" image="btn_home_normal" id="yO5-Na-3lt"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FaZ-tk-OhL">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Klo-7D-Rtl" kind="relationship" relationship="rootViewController" id="hbp-2Y-kSV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FOR-yG-Jfn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="306" y="-717"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="btn_home_normal" width="24" height="24"/>
+    </resources>
+</document>

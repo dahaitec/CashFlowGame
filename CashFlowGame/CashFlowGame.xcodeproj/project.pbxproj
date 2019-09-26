@@ -25,8 +25,10 @@
 		952843BF2339C766008B9DA6 /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952843A92339C766008B9DA6 /* PageContentView.swift */; };
 		952843C02339C766008B9DA6 /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952843AA2339C766008B9DA6 /* PageTitleView.swift */; };
 		952843C22339C857008B9DA6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952843C12339C857008B9DA6 /* ViewController.swift */; };
-		952843C62339CD85008B9DA6 /* HomeController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 952843C52339CD85008B9DA6 /* HomeController.storyboard */; };
 		952843C72339CEB6008B9DA6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952843A72339C766008B9DA6 /* MainViewController.swift */; };
+		952843C92339D39D008B9DA6 /* HomeController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 952843C82339D39D008B9DA6 /* HomeController.storyboard */; };
+		9578379B233CB1EA0080EBB7 /* detailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9578379A233CB1EA0080EBB7 /* detailView.swift */; };
+		9578379D233CC29B0080EBB7 /* personView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9578379C233CC29B0080EBB7 /* personView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,7 +53,9 @@
 		952843A92339C766008B9DA6 /* PageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
 		952843AA2339C766008B9DA6 /* PageTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
 		952843C12339C857008B9DA6 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = SOURCE_ROOT; };
-		952843C52339CD85008B9DA6 /* HomeController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HomeController.storyboard; sourceTree = "<group>"; };
+		952843C82339D39D008B9DA6 /* HomeController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HomeController.storyboard; sourceTree = "<group>"; };
+		9578379A233CB1EA0080EBB7 /* detailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailView.swift; sourceTree = "<group>"; };
+		9578379C233CC29B0080EBB7 /* personView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = personView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,8 +113,9 @@
 		952843802339C766008B9DA6 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				952843C52339CD85008B9DA6 /* HomeController.storyboard */,
-				952843822339C766008B9DA6 /* HomeController.swift */,
+				95783799233CAED40080EBB7 /* Model */,
+				95783798233CAECC0080EBB7 /* View */,
+				95783797233CAEBE0080EBB7 /* Controller */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -189,6 +194,31 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		95783797233CAEBE0080EBB7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				952843C82339D39D008B9DA6 /* HomeController.storyboard */,
+				952843822339C766008B9DA6 /* HomeController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		95783798233CAECC0080EBB7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		95783799233CAED40080EBB7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9578379A233CB1EA0080EBB7 /* detailView.swift */,
+				9578379C233CC29B0080EBB7 /* personView.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -250,7 +280,7 @@
 				952843352339C709008B9DA6 /* LaunchScreen.storyboard in Resources */,
 				952843B42339C766008B9DA6 /* FiancingController.storyboard in Resources */,
 				952843322339C709008B9DA6 /* Assets.xcassets in Resources */,
-				952843C62339CD85008B9DA6 /* HomeController.storyboard in Resources */,
+				952843C92339D39D008B9DA6 /* HomeController.storyboard in Resources */,
 				952843B62339C766008B9DA6 /* WorkingController.storyboard in Resources */,
 				952843302339C708008B9DA6 /* Main.storyboard in Resources */,
 			);
@@ -272,9 +302,11 @@
 				9528432B2339C708008B9DA6 /* AppDelegate.swift in Sources */,
 				952843C72339CEB6008B9DA6 /* MainViewController.swift in Sources */,
 				952843C02339C766008B9DA6 /* PageTitleView.swift in Sources */,
+				9578379B233CB1EA0080EBB7 /* detailView.swift in Sources */,
 				952843B72339C766008B9DA6 /* WorkingController.swift in Sources */,
 				952843AF2339C766008B9DA6 /* UIView+Extension.swift in Sources */,
 				952843BF2339C766008B9DA6 /* PageContentView.swift in Sources */,
+				9578379D233CC29B0080EBB7 /* personView.swift in Sources */,
 				952843B12339C766008B9DA6 /* GCDTimer+Extension.swift in Sources */,
 				952843AC2339C766008B9DA6 /* HomeController.swift in Sources */,
 			);
