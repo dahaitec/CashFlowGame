@@ -29,6 +29,7 @@
 		952843C92339D39D008B9DA6 /* HomeController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 952843C82339D39D008B9DA6 /* HomeController.storyboard */; };
 		9578379B233CB1EA0080EBB7 /* detailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9578379A233CB1EA0080EBB7 /* detailView.swift */; };
 		9578379D233CC29B0080EBB7 /* personView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9578379C233CC29B0080EBB7 /* personView.swift */; };
+		9578379F233CCE520080EBB7 /* buttonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9578379E233CCE520080EBB7 /* buttonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		952843C82339D39D008B9DA6 /* HomeController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HomeController.storyboard; sourceTree = "<group>"; };
 		9578379A233CB1EA0080EBB7 /* detailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailView.swift; sourceTree = "<group>"; };
 		9578379C233CC29B0080EBB7 /* personView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = personView.swift; sourceTree = "<group>"; };
+		9578379E233CCE520080EBB7 /* buttonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buttonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +208,9 @@
 		95783798233CAECC0080EBB7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9578379A233CB1EA0080EBB7 /* detailView.swift */,
+				9578379C233CC29B0080EBB7 /* personView.swift */,
+				9578379E233CCE520080EBB7 /* buttonView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -213,8 +218,6 @@
 		95783799233CAED40080EBB7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				9578379A233CB1EA0080EBB7 /* detailView.swift */,
-				9578379C233CC29B0080EBB7 /* personView.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 				952843B32339C766008B9DA6 /* Common.swift in Sources */,
 				9528432B2339C708008B9DA6 /* AppDelegate.swift in Sources */,
 				952843C72339CEB6008B9DA6 /* MainViewController.swift in Sources */,
+				9578379F233CCE520080EBB7 /* buttonView.swift in Sources */,
 				952843C02339C766008B9DA6 /* PageTitleView.swift in Sources */,
 				9578379B233CB1EA0080EBB7 /* detailView.swift in Sources */,
 				952843B72339C766008B9DA6 /* WorkingController.swift in Sources */,

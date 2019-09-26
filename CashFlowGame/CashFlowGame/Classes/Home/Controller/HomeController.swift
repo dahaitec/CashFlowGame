@@ -9,29 +9,6 @@
 import UIKit
 
 
-//Mark：- 系统按钮
-public let  shangdian :  String = "商  店"
-public let  setting :    String = "设  置"
-
-
-//MARK：- 个人情况按钮
-public let  bank :     String = "银  行"
-public let  yule :     String = "娱  乐"
-public let  house :    String = "售楼部"
-public let  hospital : String = "医  院"
-public let  shoping :  String = "购  物"
-public let  cishan :   String = "慈  善"
-public let  xiangqin : String = "相  亲"
-public let  carShop :  String = "4S 店"
-
-
-
-//MARK：- 按钮长宽
-public let  buttonWidth :  CGFloat = 100
-public let  buttonHeight : CGFloat = 20
-
-
-
 
 
 
@@ -65,109 +42,6 @@ class HomeController: UIViewController {
 
     }
     
-    //--------------------------------------------------------------------------------------------------------------------
-    //--------------------------------------------------------------------------------------------------------------------
-    //--------------------------------------------------------------------------------------------------------------------
-    
-    // MARK: -  银行按钮 第一排 1
-    let bankButton: UIButton = {
-        let button = UIButton(frame: CGRect(x: ScreenInfo.Width/2 + 30, y: ScreenInfo.Height/2 - 170, width: buttonWidth, height: buttonHeight))
-        button.backgroundColor = UIColor.blue
-        button.setTitle(bank, for: .normal)
-        button.sizeToFit()
-        button.tag = 1
-        button.addTarget(self, action: #selector(onClickPopButton(_:)), for: .touchUpInside)
-        return button
-    }()
-
-    // MARK: -  娱乐按钮 第一排 2
-    let yuleButton: UIButton = {
-        let button = UIButton(frame: CGRect(x: ScreenInfo.Width/2 + 30, y: ScreenInfo.Height/2 - 120, width: buttonWidth, height: buttonHeight))
-        button.backgroundColor = UIColor.blue
-        button.setTitle(yule, for: .normal)
-        button.sizeToFit()
-        button.tag = 1
-        button.addTarget(self, action: #selector(onClickPopButton(_:)), for: .touchUpInside)
-        return button
-    }()
-    
-    // MARK: -  售楼部按钮 第一排 3
-    let houseButton: UIButton = {
-        let button = UIButton(frame: CGRect(x: ScreenInfo.Width/2 + 30, y: ScreenInfo.Height/2 - 70, width: buttonWidth, height: buttonHeight))
-        button.backgroundColor = UIColor.blue
-        button.setTitle(house, for: .normal)
-        button.sizeToFit()
-        button.tag = 1
-        button.addTarget(self, action: #selector(onClickPopButton(_:)), for: .touchUpInside)
-        return button
-    }()
-    
-    // MARK: -  医院按钮 第一排 4
-    let hospitalButton: UIButton = {
-        let button = UIButton(frame: CGRect(x: ScreenInfo.Width/2 + 30, y: ScreenInfo.Height/2 - 20  , width: buttonWidth, height: buttonHeight))
-        button.backgroundColor = UIColor.blue
-        button.setTitle(hospital, for: .normal)
-        button.sizeToFit()
-        button.tag = 1
-        button.addTarget(self, action: #selector(onClickPopButton(_:)), for: .touchUpInside)
-        return button
-    }()
-
-    
-    //--------------------------------------------------------------------------------------------------------------------
-    //--------------------------------------------------------------------------------------------------------------------
-    //--------------------------------------------------------------------------------------------------------------------
-    // MARK: -  慈善按钮 第二排 1
-    let cishanButton: UIButton = {
-        let button = UIButton(frame: CGRect(x: ScreenInfo.Width/2 + 120, y: ScreenInfo.Height/2 - 170, width: buttonWidth, height: buttonHeight))
-        button.backgroundColor = UIColor.blue
-        button.setTitle(cishan, for: .normal)
-        button.sizeToFit()
-        button.tag = 1
-        button.addTarget(self, action: #selector(onClickPopButton(_:)), for: .touchUpInside)
-        return button
-    }()
-    
-
-    // MARK: -  相亲按钮 第二排 2
-    let xiangqinButton: UIButton = {
-        let button = UIButton(frame: CGRect(x: ScreenInfo.Width/2 + 120, y: ScreenInfo.Height/2 - 120, width: buttonWidth, height: buttonHeight))
-        button.backgroundColor = UIColor.blue
-        button.setTitle(xiangqin, for: .normal)
-        button.sizeToFit()
-        button.tag = 1
-        button.addTarget(self, action: #selector(onClickPopButton(_:)), for: .touchUpInside)
-        return button
-    }()
-    
-    // MARK: -  4S店按钮 第二排 3
-    let carShopButton: UIButton = {
-        let button = UIButton(frame: CGRect(x: ScreenInfo.Width/2 + 120, y: ScreenInfo.Height/2 - 70, width: buttonWidth, height: buttonHeight))
-        button.backgroundColor = UIColor.blue
-        button.setTitle(carShop, for: .normal)
-        button.sizeToFit()
-        button.tag = 1
-        button.addTarget(self, action: #selector(onClickPopButton(_:)), for: .touchUpInside)
-        return button
-    }()
-    
-    // MARK: -  购物按钮 第二排 4
-    let shopingButton: UIButton = {
-        let button = UIButton(frame: CGRect(x: ScreenInfo.Width/2 + 120, y: ScreenInfo.Height/2 - 20 , width: buttonWidth, height: buttonHeight))
-        button.backgroundColor = UIColor.blue
-        button.setTitle(shoping, for: .normal)
-        button.sizeToFit()
-        button.tag = 1
-        button.addTarget(self, action: #selector(onClickPopButton(_:)), for: .touchUpInside)
-        return button
-    }()
-    
-    //--------------------------------------------------------------------------------------------------------------------
-    //--------------------------------------------------------------------------------------------------------------------
-    //--------------------------------------------------------------------------------------------------------------------
-
-
-
     //MARK: -   背景图片
     let backImageView: UIImageView = {
         let imageView = UIImageView()
@@ -200,6 +74,10 @@ class HomeController: UIViewController {
         detailUIView.addSubview(shenghuofeiText)
         detailUIView.addSubview(dagongshouruText)
         detailUIView.addSubview(beidongshouruText)
+        detailUIView.addSubview(chengjiuText)
+        detailUIView.addSubview(fangchanText)
+        detailUIView.addSubview(sijiacheText)
+        detailUIView.addSubview(nvpengyouText)
         self.view.addSubview(detailUIView)
         
         
@@ -216,30 +94,64 @@ class HomeController: UIViewController {
         personUIView.addSubview(mingshengTextField)
         self.view.addSubview(personUIView)
         
-        self.view.addSubview(bankButton)
-        self.view.addSubview(yuleButton)
-        self.view.addSubview(houseButton)
-        self.view.addSubview(hospitalButton)
-        self.view.addSubview(shopingButton)
-        self.view.addSubview(cishanButton)
-        self.view.addSubview(xiangqinButton)
-        self.view.addSubview(carShopButton)
+        
+        
+        bankButton.addTarget(self, action: #selector(onClickPopButton(_:)), for: .touchUpInside)
+        yuleButton.addTarget(self, action: #selector(onClickPopButton(_:)), for: .touchUpInside)
+        houseButton.addTarget(self, action: #selector(onClickPopButton(_:)), for: .touchUpInside)
+        hospitalButton.addTarget(self, action: #selector(onClickPopButton(_:)), for: .touchUpInside)
+        shopingButton.addTarget(self, action: #selector(onClickPopButton(_:)), for: .touchUpInside)
+        cishanButton.addTarget(self, action: #selector(onClickPopButton(_:)), for: .touchUpInside)
+        xiangqinButton.addTarget(self, action: #selector(onClickPopButton(_:)), for: .touchUpInside)
+        carShopButton.addTarget(self, action: #selector(onClickPopButton(_:)), for: .touchUpInside)
+        //MARK: -  功能模块
+        buttionUIView.addSubview(bankButton)
+        buttionUIView.addSubview(yuleButton)
+        buttionUIView.addSubview(houseButton)
+        buttionUIView.addSubview(hospitalButton)
+        buttionUIView.addSubview(shopingButton)
+        buttionUIView.addSubview(cishanButton)
+        buttionUIView.addSubview(xiangqinButton)
+        buttionUIView.addSubview(carShopButton)
+        self.view.addSubview(buttionUIView)
 
     }
     
+
     @objc func onClickPopButton(_ sender: UIButton) {
         switch sender.tag {
         case 1:
+            print(sender.currentTitle ?? " ")
             popViewWithType(type:.left)
         case 2:
+            print(sender.currentTitle ?? " ")
+            popViewWithType(type: .right)
+        case 3:
+            print(sender.currentTitle ?? " ")
+            popViewWithType(type:.left)
+        case 4:
+            print(sender.currentTitle ?? " ")
+            popViewWithType(type: .right)
+        case 5:
+            print(sender.currentTitle ?? " ")
+            popViewWithType(type:.left)
+        case 6:
+            print(sender.currentTitle ?? " ")
+            popViewWithType(type: .right)
+        case 7:
+            print(sender.currentTitle ?? " ")
+            popViewWithType(type:.left)
+        case 8:
+            print(sender.currentTitle ?? " ")
             popViewWithType(type: .right)
         default:
             break
         }
     }
     
-    private func popViewWithType(type: PopViewType) {
+    public func popViewWithType(type: PopViewType) {
         let popView = CRPopView.init(frame: self.view.frame,type:type)
+        print(type)
         switch type {
         case .left:
             popView.backBlockLeft = {

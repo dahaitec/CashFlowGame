@@ -10,11 +10,11 @@ import UIKit
 
 
 //MARK：- 个人情况标签
-public let  CashLabel :         String = "现  金:"
-public let  CashfLowLabel :     String = "现金流:"
-public let  JiankangLabel :     String = "健  康:"
-public let  XinqingLabel :      String = "心  情:"
-public let  MingshengLabel :    String = "名  声:"
+public let  CashLabel :         String = "现  金"
+public let  CashfLowLabel :     String = "现金流"
+public let  JiankangLabel :     String = "健  康"
+public let  XinqingLabel :      String = "心  情"
+public let  MingshengLabel :    String = "名  声"
 
 //MARK：- 个人情况长宽
 public let  PersonWidth :  CGFloat = 60
@@ -129,7 +129,7 @@ let mingshengTextField: UITextField = {
     return textField
 }()
 
-// MARK: -  详情
+// MARK: -  个人情况
 let personUIView: UIView = {
     let  personView = UIView(frame: CGRect(x: 10, y: 100, width: ScreenInfo.Width/2, height: 170))
     

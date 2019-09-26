@@ -71,10 +71,46 @@ let beidongshouruText: UITextField = {
 
 
 
+// MARK: -  成就
+let chengjiuText: UITextField = {
+    let textField = UITextField(frame: CGRect(x: ScreenInfo.Width/2 - 20, y: 130, width: xianjinliuWidth, height: xianjinliuHeight))
+    textField.text = "成就"
+    textField.isEnabled = false
+    
+    return textField
+}()
+
+// MARK: -  房产
+let fangchanText: UITextField = {
+    let textField = UITextField(frame: CGRect(x: 10, y: 150, width: xianjinliuWidth, height: xianjinliuHeight))
+    textField.text = "房产    ： 10 栋"
+    textField.isEnabled = false
+    
+    return textField
+}()
+
+// MARK: -  汽车
+let sijiacheText: UITextField = {
+    let textField = UITextField(frame: CGRect(x: 10, y: 170, width: xianjinliuWidth, height: xianjinliuHeight))
+    textField.text = "私家车 ： 5 辆"
+    textField.isEnabled = false
+    
+    return textField
+}()
+
+// MARK: -  女朋友
+let nvpengyouText: UITextField = {
+    let textField = UITextField(frame: CGRect(x: 10, y: 190, width: xianjinliuWidth, height: xianjinliuHeight))
+    textField.text = "女朋友 ： 1 位"
+    textField.isEnabled = false
+    
+    return textField
+}()
+
 
 // MARK: -  详情
 let detailUIView: UIView = {
-    let detailView = UIView(frame: CGRect(x: 10, y: ScreenInfo.Height/2 + 70, width: ScreenInfo.Width - 20, height: 170))
+    let detailView = UIView(frame: CGRect(x: 10, y: ScreenInfo.Height/2  , width: ScreenInfo.Width - 20, height: 250))
 
     //设置背景色
    
