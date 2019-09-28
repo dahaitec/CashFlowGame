@@ -37,8 +37,9 @@ public let  buttonY2 : CGFloat = 20
 // MARK: -  银行按钮 第一排 1
 let bankButton: UIButton = {
     let button = UIButton(frame: CGRect(x: buttonX1, y: buttonY1, width: buttonWidth, height: buttonHeight))
-    button.backgroundColor = UIColor.green
-    button.setTitleColor(UIColor.black,for: .normal) //普通状态下文字的颜色
+    button.layer.cornerRadius = 5.0
+    button.backgroundColor = UIColor(red: 34 / 255, green: 153 / 255, blue: 238 / 255, alpha: 1)
+    button.setTitleColor(UIColor.white, for: .normal)
     button.setTitle(bank, for: .normal)
     button.sizeToFit()
     button.tag = 1

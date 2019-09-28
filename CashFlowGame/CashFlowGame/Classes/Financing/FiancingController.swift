@@ -12,7 +12,7 @@ class FiancingController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+                print("点击了确定")
         // Do any additional setup after loading the view.
     }
     

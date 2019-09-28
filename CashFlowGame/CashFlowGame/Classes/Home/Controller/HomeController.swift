@@ -8,10 +8,6 @@
 
 import UIKit
 
-
-
-
-
 class HomeController: UIViewController {
 
 
@@ -21,11 +17,12 @@ class HomeController: UIViewController {
     @objc private func ShangdianAction() -> Void
     {
         print(shangdian)
+        self.navigationController?.pushViewController(WorkingController(), animated: true)
     }
     
     @objc private func SettingAction() -> Void
     {
-        print(setting)
+            ZASUpdateAlert.show(version: "V1.6", content: "1.全新UI界面\n2.更好的性能体验\n3.投诉系统极速反馈\n4.多个BUG虫的尸体都不复存在", appId: "http://www.devashen.com", isMustUpdate: false)
     }
     
 
@@ -37,9 +34,13 @@ class HomeController: UIViewController {
     {
         // 设置导航栏
         self.navigationItem.title = "25岁"
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: shangdian, style: .plain, target: self, action: #selector(ShangdianAction))
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: setting, style: .plain, target: self, action: #selector(SettingAction))
-
+        self.navigationController?.navigationBar.tintColor = UIColor.white
+        self.navigationController?.navigationBar
+            .setBackgroundImage(resizableImage(imageName: "header_bg_message", edgeInsets: UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)), for: .default)
+        
     }
     
     //MARK: -   背景图片
@@ -54,6 +55,7 @@ class HomeController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         drawMyView()
+                        print("点击了确定")
     }
     
 
@@ -122,28 +124,32 @@ class HomeController: UIViewController {
         switch sender.tag {
         case 1:
             print(sender.currentTitle ?? " ")
-            popViewWithType(type:.left)
+            let alertView = FWAlertView.alert(title: "标题", detail: "描述描述描述描述") { (popupView, index, title) in
+                print("点击了确定")
+            }
+            alertView.show()
+
         case 2:
             print(sender.currentTitle ?? " ")
-            popViewWithType(type: .right)
+
         case 3:
             print(sender.currentTitle ?? " ")
-            popViewWithType(type:.left)
+
         case 4:
             print(sender.currentTitle ?? " ")
-            popViewWithType(type: .right)
+
         case 5:
             print(sender.currentTitle ?? " ")
-            popViewWithType(type:.left)
+
         case 6:
             print(sender.currentTitle ?? " ")
-            popViewWithType(type: .right)
+
         case 7:
             print(sender.currentTitle ?? " ")
-            popViewWithType(type:.left)
+
         case 8:
             print(sender.currentTitle ?? " ")
-            popViewWithType(type: .right)
+
         default:
             break
         }
@@ -177,3 +183,17 @@ class HomeController: UIViewController {
     }
     
 }
+
+func resizableImage(imageName: String, edgeInsets: UIEdgeInsets) -> UIImage? {
+    
+    let image = UIImage(named: imageName)
+    if image == nil {
+        return nil
+    }
+    let imageW = image!.size.width
+    let imageH = image!.size.height
+    
+    return image?.resizableImage(withCapInsets: UIEdgeInsets(top: imageH * edgeInsets.top, left: imageW * edgeInsets.left, bottom: imageH * edgeInsets.bottom, right: imageW * edgeInsets.right), resizingMode: .stretch)
+}
+
+
