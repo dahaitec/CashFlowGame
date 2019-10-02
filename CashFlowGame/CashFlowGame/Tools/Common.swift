@@ -15,3 +15,5 @@ let kNavigationBarH : CGFloat = 44
 let kScreenW = UIScreen.main.bounds.width
 let kScreenH = UIScreen.main.bounds.height
 
+//MARK: - 个人偏好设置
+let defaults = UserDefaults.standard

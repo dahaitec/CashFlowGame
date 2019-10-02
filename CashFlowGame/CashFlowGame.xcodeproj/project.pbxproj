@@ -31,20 +31,21 @@
 		9578379B233CB1EA0080EBB7 /* detailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9578379A233CB1EA0080EBB7 /* detailView.swift */; };
 		9578379D233CC29B0080EBB7 /* personView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9578379C233CC29B0080EBB7 /* personView.swift */; };
 		9578379F233CCE520080EBB7 /* buttonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9578379E233CCE520080EBB7 /* buttonView.swift */; };
-		95DC1D0F233F306000155B97 /* FWPopupItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DC1D04233F306000155B97 /* FWPopupItem.swift */; };
-		95DC1D10233F306000155B97 /* FWPopupRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DC1D05233F306000155B97 /* FWPopupRootViewController.swift */; };
-		95DC1D11233F306000155B97 /* FWRadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DC1D06233F306000155B97 /* FWRadioButton.swift */; };
-		95DC1D12233F306000155B97 /* FWPopupWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DC1D07233F306000155B97 /* FWPopupWindow.swift */; };
-		95DC1D13233F306000155B97 /* FWMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DC1D08233F306000155B97 /* FWMenuView.swift */; };
-		95DC1D14233F306000155B97 /* FWPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DC1D09233F306000155B97 /* FWPopupView.swift */; };
-		95DC1D15233F306000155B97 /* FWPopupCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DC1D0A233F306000155B97 /* FWPopupCategory.swift */; };
-		95DC1D16233F306000155B97 /* FWSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DC1D0B233F306000155B97 /* FWSheetView.swift */; };
-		95DC1D17233F306000155B97 /* FWAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DC1D0C233F306000155B97 /* FWAlertView.swift */; };
-		95DC1D18233F306000155B97 /* FWDateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DC1D0D233F306000155B97 /* FWDateView.swift */; };
-		95DC1D19233F306000155B97 /* FWCustomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DC1D0E233F306000155B97 /* FWCustomSheetView.swift */; };
+		95B2402423447AA40043DE67 /* SettingController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 95B2402323447AA40043DE67 /* SettingController.bundle */; };
+		95B240302344CFE40043DE67 /* FWPopupRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B240252344CFE30043DE67 /* FWPopupRootViewController.swift */; };
+		95B240312344CFE40043DE67 /* FWPopupWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B240262344CFE30043DE67 /* FWPopupWindow.swift */; };
+		95B240352344CFE40043DE67 /* FWPopupItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B2402A2344CFE40043DE67 /* FWPopupItem.swift */; };
+		95B240372344CFE40043DE67 /* FWPopupCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B2402C2344CFE40043DE67 /* FWPopupCategory.swift */; };
+		95B240382344CFE40043DE67 /* FWAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B2402D2344CFE40043DE67 /* FWAlertView.swift */; };
+		95B2403A2344CFE40043DE67 /* FWPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B2402F2344CFE40043DE67 /* FWPopupView.swift */; };
+		95B2403C2344D75E0043DE67 /* licaiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B2403B2344D75E0043DE67 /* licaiView.swift */; };
+		95B2403E2344DB220043DE67 /* HomeController-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B2403D2344DB220043DE67 /* HomeController-Extension.swift */; };
+		95B240402344E29A0043DE67 /* HomeView-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B2403F2344E29A0043DE67 /* HomeView-Extension.swift */; };
+		95B240422344ED590043DE67 /* Working.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 95B240412344ED580043DE67 /* Working.bundle */; };
+		95B24044234515010043DE67 /* HeroCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B24043234515010043DE67 /* HeroCell.swift */; };
 		95DC1D1B233F33E100155B97 /* personModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DC1D1A233F33E100155B97 /* personModel.swift */; };
 		95DC1D1D233F33F500155B97 /* detailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DC1D1C233F33F500155B97 /* detailModel.swift */; };
-		95DC1D21233F4A5E00155B97 /* ZASUpdateAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DC1D20233F4A5E00155B97 /* ZASUpdateAlert.swift */; };
+		95DC1D21233F4A5E00155B97 /* SettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DC1D20233F4A5E00155B97 /* SettingController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,20 +76,21 @@
 		9578379A233CB1EA0080EBB7 /* detailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailView.swift; sourceTree = "<group>"; };
 		9578379C233CC29B0080EBB7 /* personView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = personView.swift; sourceTree = "<group>"; };
 		9578379E233CCE520080EBB7 /* buttonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buttonView.swift; sourceTree = "<group>"; };
-		95DC1D04233F306000155B97 /* FWPopupItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FWPopupItem.swift; sourceTree = "<group>"; };
-		95DC1D05233F306000155B97 /* FWPopupRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FWPopupRootViewController.swift; sourceTree = "<group>"; };
-		95DC1D06233F306000155B97 /* FWRadioButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FWRadioButton.swift; sourceTree = "<group>"; };
-		95DC1D07233F306000155B97 /* FWPopupWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FWPopupWindow.swift; sourceTree = "<group>"; };
-		95DC1D08233F306000155B97 /* FWMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FWMenuView.swift; sourceTree = "<group>"; };
-		95DC1D09233F306000155B97 /* FWPopupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FWPopupView.swift; sourceTree = "<group>"; };
-		95DC1D0A233F306000155B97 /* FWPopupCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FWPopupCategory.swift; sourceTree = "<group>"; };
-		95DC1D0B233F306000155B97 /* FWSheetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FWSheetView.swift; sourceTree = "<group>"; };
-		95DC1D0C233F306000155B97 /* FWAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FWAlertView.swift; sourceTree = "<group>"; };
-		95DC1D0D233F306000155B97 /* FWDateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FWDateView.swift; sourceTree = "<group>"; };
-		95DC1D0E233F306000155B97 /* FWCustomSheetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FWCustomSheetView.swift; sourceTree = "<group>"; };
+		95B2402323447AA40043DE67 /* SettingController.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SettingController.bundle; sourceTree = "<group>"; };
+		95B240252344CFE30043DE67 /* FWPopupRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FWPopupRootViewController.swift; path = "../../../../../***实用***/FWPopupView/FWPopupView/FWPopupView/FWPopupView/FWPopupRootViewController.swift"; sourceTree = "<group>"; };
+		95B240262344CFE30043DE67 /* FWPopupWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FWPopupWindow.swift; path = "../../../../../***实用***/FWPopupView/FWPopupView/FWPopupView/FWPopupView/FWPopupWindow.swift"; sourceTree = "<group>"; };
+		95B2402A2344CFE40043DE67 /* FWPopupItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FWPopupItem.swift; path = "../../../../../***实用***/FWPopupView/FWPopupView/FWPopupView/FWPopupView/FWPopupItem.swift"; sourceTree = "<group>"; };
+		95B2402C2344CFE40043DE67 /* FWPopupCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FWPopupCategory.swift; path = "../../../../../***实用***/FWPopupView/FWPopupView/FWPopupView/FWPopupView/FWPopupCategory.swift"; sourceTree = "<group>"; };
+		95B2402D2344CFE40043DE67 /* FWAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FWAlertView.swift; path = "../../../../../***实用***/FWPopupView/FWPopupView/FWPopupView/FWPopupView/FWAlertView.swift"; sourceTree = "<group>"; };
+		95B2402F2344CFE40043DE67 /* FWPopupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FWPopupView.swift; path = "../../../../../***实用***/FWPopupView/FWPopupView/FWPopupView/FWPopupView/FWPopupView.swift"; sourceTree = "<group>"; };
+		95B2403B2344D75E0043DE67 /* licaiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = licaiView.swift; sourceTree = "<group>"; };
+		95B2403D2344DB220043DE67 /* HomeController-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeController-Extension.swift"; sourceTree = "<group>"; };
+		95B2403F2344E29A0043DE67 /* HomeView-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeView-Extension.swift"; sourceTree = "<group>"; };
+		95B240412344ED580043DE67 /* Working.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Working.bundle; sourceTree = "<group>"; };
+		95B24043234515010043DE67 /* HeroCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroCell.swift; sourceTree = "<group>"; };
 		95DC1D1A233F33E100155B97 /* personModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = personModel.swift; sourceTree = "<group>"; };
 		95DC1D1C233F33F500155B97 /* detailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailModel.swift; sourceTree = "<group>"; };
-		95DC1D20233F4A5E00155B97 /* ZASUpdateAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZASUpdateAlert.swift; sourceTree = "<group>"; };
+		95DC1D20233F4A5E00155B97 /* SettingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingController.swift; sourceTree = "<group>"; };
 		F32E5DB9279E085F76DF79B5 /* Pods-CashFlowGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CashFlowGame.release.xcconfig"; path = "Target Support Files/Pods-CashFlowGame/Pods-CashFlowGame.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -142,8 +144,8 @@
 			children = (
 				952843962339C766008B9DA6 /* Main */,
 				952843802339C766008B9DA6 /* Home */,
-				952843902339C766008B9DA6 /* Financing */,
 				952843932339C766008B9DA6 /* Working */,
+				952843902339C766008B9DA6 /* Financing */,
 				95DC1D1F233F4A1B00155B97 /* Shopping */,
 				95DC1D1E233F49EA00155B97 /* Setting */,
 			);
@@ -185,6 +187,7 @@
 		952843902339C766008B9DA6 /* Financing */ = {
 			isa = PBXGroup;
 			children = (
+				95B24043234515010043DE67 /* HeroCell.swift */,
 				952843922339C766008B9DA6 /* FiancingController.swift */,
 			);
 			path = Financing;
@@ -193,6 +196,7 @@
 		952843932339C766008B9DA6 /* Working */ = {
 			isa = PBXGroup;
 			children = (
+				95B240412344ED580043DE67 /* Working.bundle */,
 				954A0933233FA6D8001E188E /* SubViewController.swift */,
 				9534C672233F8D52005283EC /* WorkingTableViewCell.xib */,
 				9534C66C233F8D39005283EC /* WorkingTableViewCell.swift */,
@@ -239,6 +243,7 @@
 			isa = PBXGroup;
 			children = (
 				952843822339C766008B9DA6 /* HomeController.swift */,
+				95B2403D2344DB220043DE67 /* HomeController-Extension.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -249,6 +254,8 @@
 				9578379A233CB1EA0080EBB7 /* detailView.swift */,
 				9578379C233CC29B0080EBB7 /* personView.swift */,
 				9578379E233CCE520080EBB7 /* buttonView.swift */,
+				95B2403B2344D75E0043DE67 /* licaiView.swift */,
+				95B2403F2344E29A0043DE67 /* HomeView-Extension.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -265,17 +272,12 @@
 		95DC1D03233F2EBF00155B97 /* AlertView */ = {
 			isa = PBXGroup;
 			children = (
-				95DC1D0C233F306000155B97 /* FWAlertView.swift */,
-				95DC1D0E233F306000155B97 /* FWCustomSheetView.swift */,
-				95DC1D0D233F306000155B97 /* FWDateView.swift */,
-				95DC1D08233F306000155B97 /* FWMenuView.swift */,
-				95DC1D0A233F306000155B97 /* FWPopupCategory.swift */,
-				95DC1D04233F306000155B97 /* FWPopupItem.swift */,
-				95DC1D05233F306000155B97 /* FWPopupRootViewController.swift */,
-				95DC1D09233F306000155B97 /* FWPopupView.swift */,
-				95DC1D07233F306000155B97 /* FWPopupWindow.swift */,
-				95DC1D06233F306000155B97 /* FWRadioButton.swift */,
-				95DC1D0B233F306000155B97 /* FWSheetView.swift */,
+				95B2402D2344CFE40043DE67 /* FWAlertView.swift */,
+				95B2402C2344CFE40043DE67 /* FWPopupCategory.swift */,
+				95B2402A2344CFE40043DE67 /* FWPopupItem.swift */,
+				95B240252344CFE30043DE67 /* FWPopupRootViewController.swift */,
+				95B2402F2344CFE40043DE67 /* FWPopupView.swift */,
+				95B240262344CFE30043DE67 /* FWPopupWindow.swift */,
 			);
 			path = AlertView;
 			sourceTree = "<group>";
@@ -283,7 +285,8 @@
 		95DC1D1E233F49EA00155B97 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
-				95DC1D20233F4A5E00155B97 /* ZASUpdateAlert.swift */,
+				95B2402323447AA40043DE67 /* SettingController.bundle */,
+				95DC1D20233F4A5E00155B97 /* SettingController.swift */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -374,7 +377,9 @@
 			files = (
 				952843352339C709008B9DA6 /* LaunchScreen.storyboard in Resources */,
 				952843322339C709008B9DA6 /* Assets.xcassets in Resources */,
+				95B2402423447AA40043DE67 /* SettingController.bundle in Resources */,
 				9534C673233F8D52005283EC /* WorkingTableViewCell.xib in Resources */,
+				95B240422344ED590043DE67 /* Working.bundle in Resources */,
 				954A0930233FA167001E188E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,39 +433,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95DC1D13233F306000155B97 /* FWMenuView.swift in Sources */,
-				95DC1D0F233F306000155B97 /* FWPopupItem.swift in Sources */,
-				95DC1D21233F4A5E00155B97 /* ZASUpdateAlert.swift in Sources */,
-				95DC1D19233F306000155B97 /* FWCustomSheetView.swift in Sources */,
+				95DC1D21233F4A5E00155B97 /* SettingController.swift in Sources */,
 				952843B22339C766008B9DA6 /* CRPopView.swift in Sources */,
 				952843B52339C766008B9DA6 /* FiancingController.swift in Sources */,
+				95B240352344CFE40043DE67 /* FWPopupItem.swift in Sources */,
 				952843AE2339C766008B9DA6 /* UIColor-Extension.swift in Sources */,
 				952843C22339C857008B9DA6 /* ViewController.swift in Sources */,
-				95DC1D17233F306000155B97 /* FWAlertView.swift in Sources */,
 				952843B02339C766008B9DA6 /* UIBaraaButtonItem-Extension.swift in Sources */,
 				952843B32339C766008B9DA6 /* Common.swift in Sources */,
 				9528432B2339C708008B9DA6 /* AppDelegate.swift in Sources */,
 				9578379F233CCE520080EBB7 /* buttonView.swift in Sources */,
 				952843C02339C766008B9DA6 /* PageTitleView.swift in Sources */,
-				95DC1D12233F306000155B97 /* FWPopupWindow.swift in Sources */,
 				9578379B233CB1EA0080EBB7 /* detailView.swift in Sources */,
+				95B240382344CFE40043DE67 /* FWAlertView.swift in Sources */,
 				95DC1D1D233F33F500155B97 /* detailModel.swift in Sources */,
-				95DC1D10233F306000155B97 /* FWPopupRootViewController.swift in Sources */,
-				95DC1D15233F306000155B97 /* FWPopupCategory.swift in Sources */,
-				95DC1D16233F306000155B97 /* FWSheetView.swift in Sources */,
 				952843AF2339C766008B9DA6 /* UIView+Extension.swift in Sources */,
+				95B2403C2344D75E0043DE67 /* licaiView.swift in Sources */,
 				952843BF2339C766008B9DA6 /* PageContentView.swift in Sources */,
 				9534C670233F8D39005283EC /* WorkingController.swift in Sources */,
 				9534C66F233F8D39005283EC /* WorkingTableViewCell.swift in Sources */,
 				95DC1D1B233F33E100155B97 /* personModel.swift in Sources */,
-				95DC1D14233F306000155B97 /* FWPopupView.swift in Sources */,
 				9578379D233CC29B0080EBB7 /* personView.swift in Sources */,
-				95DC1D18233F306000155B97 /* FWDateView.swift in Sources */,
 				954A092C233F9E4D001E188E /* FWNavigationController.swift in Sources */,
+				95B2403E2344DB220043DE67 /* HomeController-Extension.swift in Sources */,
+				95B24044234515010043DE67 /* HeroCell.swift in Sources */,
 				952843B12339C766008B9DA6 /* GCDTimer+Extension.swift in Sources */,
-				95DC1D11233F306000155B97 /* FWRadioButton.swift in Sources */,
+				95B2403A2344CFE40043DE67 /* FWPopupView.swift in Sources */,
 				952843AC2339C766008B9DA6 /* HomeController.swift in Sources */,
 				954A0934233FA6D8001E188E /* SubViewController.swift in Sources */,
+				95B240372344CFE40043DE67 /* FWPopupCategory.swift in Sources */,
+				95B240302344CFE40043DE67 /* FWPopupRootViewController.swift in Sources */,
+				95B240312344CFE40043DE67 /* FWPopupWindow.swift in Sources */,
+				95B240402344E29A0043DE67 /* HomeView-Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -604,6 +608,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CashFlowGame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -623,6 +628,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CashFlowGame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

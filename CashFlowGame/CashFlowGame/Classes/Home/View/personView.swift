@@ -131,7 +131,7 @@ let mingshengTextField: UITextField = {
 
 // MARK: -  个人情况
 let personUIView: UIView = {
-    let  personView = UIView(frame: CGRect(x: 10, y: 100, width: ScreenInfo.Width/2, height: 170))
+    let  personView = UIView(frame: CGRect(x: 10, y: 30, width: ScreenInfo.Width/2, height: 170))
     
     //设置背景色
     
