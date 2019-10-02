@@ -18,10 +18,12 @@
 		952843B12339C766008B9DA6 /* GCDTimer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9528438D2339C766008B9DA6 /* GCDTimer+Extension.swift */; };
 		952843B22339C766008B9DA6 /* CRPopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9528438E2339C766008B9DA6 /* CRPopView.swift */; };
 		952843B32339C766008B9DA6 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9528438F2339C766008B9DA6 /* Common.swift */; };
-		952843B52339C766008B9DA6 /* FiancingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952843922339C766008B9DA6 /* FiancingController.swift */; };
+		952843B52339C766008B9DA6 /* ToziController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952843922339C766008B9DA6 /* ToziController.swift */; };
 		952843BF2339C766008B9DA6 /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952843A92339C766008B9DA6 /* PageContentView.swift */; };
 		952843C02339C766008B9DA6 /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952843AA2339C766008B9DA6 /* PageTitleView.swift */; };
 		952843C22339C857008B9DA6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952843C12339C857008B9DA6 /* ViewController.swift */; };
+		952D33222345284600382A9D /* DagongController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952D33212345284600382A9D /* DagongController.swift */; };
+		952D332423452B8600382A9D /* DagongCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952D332323452B8600382A9D /* DagongCell.swift */; };
 		9534C66F233F8D39005283EC /* WorkingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9534C66C233F8D39005283EC /* WorkingTableViewCell.swift */; };
 		9534C670233F8D39005283EC /* WorkingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9534C66D233F8D39005283EC /* WorkingController.swift */; };
 		9534C673233F8D52005283EC /* WorkingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9534C672233F8D52005283EC /* WorkingTableViewCell.xib */; };
@@ -42,7 +44,7 @@
 		95B2403E2344DB220043DE67 /* HomeController-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B2403D2344DB220043DE67 /* HomeController-Extension.swift */; };
 		95B240402344E29A0043DE67 /* HomeView-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B2403F2344E29A0043DE67 /* HomeView-Extension.swift */; };
 		95B240422344ED590043DE67 /* Working.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 95B240412344ED580043DE67 /* Working.bundle */; };
-		95B24044234515010043DE67 /* HeroCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B24043234515010043DE67 /* HeroCell.swift */; };
+		95B24044234515010043DE67 /* ToziCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B24043234515010043DE67 /* ToziCell.swift */; };
 		95DC1D1B233F33E100155B97 /* personModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DC1D1A233F33E100155B97 /* personModel.swift */; };
 		95DC1D1D233F33F500155B97 /* detailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DC1D1C233F33F500155B97 /* detailModel.swift */; };
 		95DC1D21233F4A5E00155B97 /* SettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DC1D20233F4A5E00155B97 /* SettingController.swift */; };
@@ -63,10 +65,12 @@
 		9528438D2339C766008B9DA6 /* GCDTimer+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GCDTimer+Extension.swift"; sourceTree = "<group>"; };
 		9528438E2339C766008B9DA6 /* CRPopView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CRPopView.swift; sourceTree = "<group>"; };
 		9528438F2339C766008B9DA6 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
-		952843922339C766008B9DA6 /* FiancingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiancingController.swift; sourceTree = "<group>"; };
+		952843922339C766008B9DA6 /* ToziController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToziController.swift; sourceTree = "<group>"; };
 		952843A92339C766008B9DA6 /* PageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
 		952843AA2339C766008B9DA6 /* PageTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
 		952843C12339C857008B9DA6 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = SOURCE_ROOT; };
+		952D33212345284600382A9D /* DagongController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DagongController.swift; sourceTree = "<group>"; };
+		952D332323452B8600382A9D /* DagongCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DagongCell.swift; sourceTree = "<group>"; };
 		9534C66C233F8D39005283EC /* WorkingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkingTableViewCell.swift; sourceTree = "<group>"; };
 		9534C66D233F8D39005283EC /* WorkingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkingController.swift; sourceTree = "<group>"; };
 		9534C672233F8D52005283EC /* WorkingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WorkingTableViewCell.xib; sourceTree = "<group>"; };
@@ -87,7 +91,7 @@
 		95B2403D2344DB220043DE67 /* HomeController-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeController-Extension.swift"; sourceTree = "<group>"; };
 		95B2403F2344E29A0043DE67 /* HomeView-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeView-Extension.swift"; sourceTree = "<group>"; };
 		95B240412344ED580043DE67 /* Working.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Working.bundle; sourceTree = "<group>"; };
-		95B24043234515010043DE67 /* HeroCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroCell.swift; sourceTree = "<group>"; };
+		95B24043234515010043DE67 /* ToziCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToziCell.swift; sourceTree = "<group>"; };
 		95DC1D1A233F33E100155B97 /* personModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = personModel.swift; sourceTree = "<group>"; };
 		95DC1D1C233F33F500155B97 /* detailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailModel.swift; sourceTree = "<group>"; };
 		95DC1D20233F4A5E00155B97 /* SettingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingController.swift; sourceTree = "<group>"; };
@@ -187,8 +191,10 @@
 		952843902339C766008B9DA6 /* Financing */ = {
 			isa = PBXGroup;
 			children = (
-				95B24043234515010043DE67 /* HeroCell.swift */,
-				952843922339C766008B9DA6 /* FiancingController.swift */,
+				95B24043234515010043DE67 /* ToziCell.swift */,
+				952D332323452B8600382A9D /* DagongCell.swift */,
+				952843922339C766008B9DA6 /* ToziController.swift */,
+				952D33212345284600382A9D /* DagongController.swift */,
 			);
 			path = Financing;
 			sourceTree = "<group>";
@@ -435,7 +441,7 @@
 			files = (
 				95DC1D21233F4A5E00155B97 /* SettingController.swift in Sources */,
 				952843B22339C766008B9DA6 /* CRPopView.swift in Sources */,
-				952843B52339C766008B9DA6 /* FiancingController.swift in Sources */,
+				952843B52339C766008B9DA6 /* ToziController.swift in Sources */,
 				95B240352344CFE40043DE67 /* FWPopupItem.swift in Sources */,
 				952843AE2339C766008B9DA6 /* UIColor-Extension.swift in Sources */,
 				952843C22339C857008B9DA6 /* ViewController.swift in Sources */,
@@ -444,11 +450,13 @@
 				9528432B2339C708008B9DA6 /* AppDelegate.swift in Sources */,
 				9578379F233CCE520080EBB7 /* buttonView.swift in Sources */,
 				952843C02339C766008B9DA6 /* PageTitleView.swift in Sources */,
+				952D332423452B8600382A9D /* DagongCell.swift in Sources */,
 				9578379B233CB1EA0080EBB7 /* detailView.swift in Sources */,
 				95B240382344CFE40043DE67 /* FWAlertView.swift in Sources */,
 				95DC1D1D233F33F500155B97 /* detailModel.swift in Sources */,
 				952843AF2339C766008B9DA6 /* UIView+Extension.swift in Sources */,
 				95B2403C2344D75E0043DE67 /* licaiView.swift in Sources */,
+				952D33222345284600382A9D /* DagongController.swift in Sources */,
 				952843BF2339C766008B9DA6 /* PageContentView.swift in Sources */,
 				9534C670233F8D39005283EC /* WorkingController.swift in Sources */,
 				9534C66F233F8D39005283EC /* WorkingTableViewCell.swift in Sources */,
@@ -456,7 +464,7 @@
 				9578379D233CC29B0080EBB7 /* personView.swift in Sources */,
 				954A092C233F9E4D001E188E /* FWNavigationController.swift in Sources */,
 				95B2403E2344DB220043DE67 /* HomeController-Extension.swift in Sources */,
-				95B24044234515010043DE67 /* HeroCell.swift in Sources */,
+				95B24044234515010043DE67 /* ToziCell.swift in Sources */,
 				952843B12339C766008B9DA6 /* GCDTimer+Extension.swift in Sources */,
 				95B2403A2344CFE40043DE67 /* FWPopupView.swift in Sources */,
 				952843AC2339C766008B9DA6 /* HomeController.swift in Sources */,

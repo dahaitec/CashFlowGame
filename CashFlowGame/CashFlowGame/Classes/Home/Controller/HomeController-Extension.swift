@@ -68,14 +68,21 @@ extension HomeController{
                self.navigationController?.pushViewController(WorkingController(), animated: true)
             case 9:
                 // MARK: -  休息一下
-               self.navigationController?.pushViewController(FiancingController(), animated: true)
+               // MARK: -  慈善按钮
+               let alertView = FWAlertView.alert(title: "温馨提示", detail: "您确认结束游戏吗？", confirmBlock: { (popupView, index, title) in
+                   print("结束游戏")
+
+               }, cancelBlock: { (popupView, index, title) in
+                   print("点击了取消")
+               })
+               alertView.show()
 
             case 10:
                 // MARK: -  投资理财
-               self.navigationController?.pushViewController(FiancingController(), animated: true)
+               self.navigationController?.pushViewController(ToziController(), animated: true)
             case 11:
                 // MARK: -  职场打工
-               self.navigationController?.pushViewController(WorkingController(), animated: true)
+               self.navigationController?.pushViewController(DagongController(), animated: true)
             default:
                 break
             }

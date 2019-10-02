@@ -52,32 +52,39 @@ class WorkingController: UIViewController, UITableViewDelegate, UITableViewDataS
         return .lightContent
     }
     
+    // MARK: - 设置界面
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.view.backgroundColor = UIColor.white
-        self.navigationItem.title = "售楼部"
+
        for index in 0...self.imageArray.count {
             self.moneyArray.append(self.obtainRandomMoney(index: index))
         }
-        
-        let buttonItem: UIBarButtonItem = UIBarButtonItem(image: UIImage(named: "Working.bundle/edit_undo.png"), style: .plain, target: self, action: #selector(leftBtnAction))
-      
-        buttonItem.tintColor = UIColor.black
-        
-        self.navigationItem.leftBarButtonItem = buttonItem
-        
-        let buttonItem2: UIBarButtonItem = UIBarButtonItem(title: "可用资金：10000", style: .plain, target: self, action: nil)
-        buttonItem2.tintColor = UIColor.white
 
-         self.navigationItem.rightBarButtonItem = buttonItem2
-        
-        
         self.view.addSubview(self.tableView)
         self.tableView.register(UINib(nibName: "WorkingTableViewCell", bundle: nil), forCellReuseIdentifier: "cellId")
         self.tableView.delegate = self
         self.tableView.dataSource = self
         
+        // 设置导航栏
+        setUpUI()
+    }
+    
+
+
+    // MARK: - 设置导航栏
+    private func setUpUI() -> Void
+    {
+        self.navigationItem.title = "售楼部"
+        let buttonItem: UIBarButtonItem = UIBarButtonItem(image: UIImage(named: "Working.bundle/edit_undo.png"), style: .plain, target: self, action: #selector(leftBtnAction))
+        buttonItem.tintColor = UIColor.black
+
+        self.navigationItem.leftBarButtonItem = buttonItem
+        let buttonItem2: UIBarButtonItem = UIBarButtonItem(title: "可用资金：10000", style: .plain, target: self, action: nil)
+        buttonItem2.tintColor = UIColor.white
+        self.navigationItem.rightBarButtonItem = buttonItem2
+
     }
     
     @objc func leftBtnAction() {
