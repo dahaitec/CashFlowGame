@@ -1,9 +1,9 @@
 //
 //  HeroCell.swift
-//  WZSC
+//  CashFlowGame
 //
-//  Created by yuhua on 2019/5/27.
-//  Copyright © 2019 余华. All rights reserved.
+//  Created by Sheng Zhao Huang on 2019/9/23.
+//  Copyright © 2019 Sheng Zhao Huang. All rights reserved.
 //
 
 import UIKit

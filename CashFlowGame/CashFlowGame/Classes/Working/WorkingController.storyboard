@@ -1,52 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FxR-xT-xsa">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Vc7-pv-vAI">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--个人情况-->
-        <scene sceneID="lJs-ga-1Bl">
+        <!--View Controller-->
+        <scene sceneID="cUf-7t-KJE">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="FxR-xT-xsa" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="个人情况" image="btn_home_normal" id="fIc-E6-Tdp"/>
-                    <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xwE-bG-RDy">
-                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="vUT-v4-fCX" kind="relationship" relationship="viewControllers" id="E4h-rO-J7o"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SMv-BM-bZg" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-339" y="-1555"/>
-        </scene>
-        <!--Item-->
-        <scene sceneID="2kG-py-su6">
-            <objects>
-                <viewController id="vUT-v4-fCX" customClass="WorkingController" customModule="CashFlowGame" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="p73-ZK-BJr">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                <viewController id="gsN-NM-ige" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Eag-Ex-7we">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="Cgz-29-nHr"/>
+                        <viewLayoutGuide key="safeArea" id="411-EG-UUM"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="zcB-db-7n4"/>
-                    <navigationItem key="navigationItem" id="Wv7-sI-KlX"/>
+                    <navigationItem key="navigationItem" id="evp-Ee-ENi"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GEB-mt-OXg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ps7-1F-lIS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="406" y="-1548"/>
+            <point key="canvasLocation" x="991" y="977"/>
+        </scene>
+        <!--职场打工-->
+        <scene sceneID="FAY-6F-oYZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Vc7-pv-vAI" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="职场打工" image="btn_live_normal" id="6CW-0N-76N"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NR9-et-ac5">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="gsN-NM-ige" kind="relationship" relationship="rootViewController" id="o6y-V1-8fx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VHZ-Td-7Ou" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="254" y="966"/>
         </scene>
     </scenes>
     <resources>
-        <image name="btn_home_normal" width="24" height="24"/>
+        <image name="btn_live_normal" width="30" height="24"/>
     </resources>
 </document>
