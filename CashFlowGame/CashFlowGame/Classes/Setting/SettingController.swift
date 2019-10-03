@@ -71,7 +71,7 @@ public class SettingController: UIView {
     }()
 
     let ReviewButton: UIButton = {
-        let button = UIButton(frame: CGRect(x: screenWidth  - 80 - 150, y: 150, width:btnWidth, height: btnHeight))
+        let button = UIButton(frame: CGRect(x: 290 - 150, y: 150, width:btnWidth, height: btnHeight))
         button.clipsToBounds = true
         button.layer.cornerRadius = 20.0
         button.backgroundColor = UIColor(red: 34 / 255, green: 153 / 255, blue: 238 / 255, alpha: 1)
@@ -83,7 +83,7 @@ public class SettingController: UIView {
 
     // MARK: -  音乐
     let YinyueLabel: UILabel = {
-        let label = UILabel(frame: CGRect(x: screenWidth  - 80 - 150, y: 30, width:40, height: btnHeight))
+        let label = UILabel(frame: CGRect(x: 290 - 150, y: 30, width:40, height: btnHeight))
         label.text = "音乐"
         label.layer.cornerRadius = 30.0
         label.textColor=UIColor.white
@@ -94,7 +94,7 @@ public class SettingController: UIView {
     }()
     
     let YinyueButton: UISwitch = {
-        let button = UISwitch(frame: CGRect(x: screenWidth  - 80 - 80, y: 30, width:btnWidth, height: btnHeight))
+        let button = UISwitch(frame: CGRect(x: 290 - 80, y: 30, width:btnWidth, height: btnHeight))
         button.clipsToBounds = true
         let shengyinFlag = defaults.string(forKey: "yinyue")
         if shengyinFlag == nil || shengyinFlag == "on" {
@@ -109,7 +109,7 @@ public class SettingController: UIView {
     
     // MARK: -  声音
     let ShengyinLabel: UILabel = {
-        let label = UILabel(frame: CGRect(x: screenWidth  - 80 - 150, y: 90, width:40, height: btnHeight))
+        let label = UILabel(frame: CGRect(x: 290 - 150, y: 90, width:40, height: btnHeight))
         label.text = "声音"
         label.layer.cornerRadius = 30.0
         label.textColor=UIColor.white
@@ -120,7 +120,7 @@ public class SettingController: UIView {
     }()
     
     let ShengyinButton: UISwitch = {
-        let button = UISwitch(frame: CGRect(x: screenWidth - 80 - 80, y: 90, width:btnWidth, height: btnHeight))
+        let button = UISwitch(frame: CGRect(x: 290 - 80, y: 90, width:btnWidth, height: btnHeight))
         button.clipsToBounds = true
         
         let shengyinFlag = defaults.string(forKey: "shengyin")
@@ -163,7 +163,7 @@ public class SettingController: UIView {
         self.frame = UIScreen.main.bounds
         self.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.3)
         
-        let contentView = UIView(frame: CGRect.init(x: 0, y: 0, width: screenWidth - 80, height: screenHeight/2 - 130))
+        let contentView = UIView(frame: CGRect.init(x: 0, y: 0, width: 290, height: 220))
         contentView.center = self.center
         contentView.backgroundColor = UIColor.init(r: 255, g: 210, b: 102, alpha: 1)
         contentView.layer.cornerRadius = 50.0

@@ -50,6 +50,7 @@
 		95DC1D21233F4A5E00155B97 /* SettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DC1D20233F4A5E00155B97 /* SettingController.swift */; };
 		95E4DFBF234606080072E223 /* BankController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E4DFBE234606080072E223 /* BankController.swift */; };
 		95E4DFC1234606240072E223 /* Bank.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 95E4DFC0234606240072E223 /* Bank.bundle */; };
+		95E4DFC6234629070072E223 /* BankAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E4DFC5234629070072E223 /* BankAlertView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -99,6 +100,7 @@
 		95DC1D20233F4A5E00155B97 /* SettingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingController.swift; sourceTree = "<group>"; };
 		95E4DFBE234606080072E223 /* BankController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankController.swift; sourceTree = "<group>"; };
 		95E4DFC0234606240072E223 /* Bank.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Bank.bundle; sourceTree = "<group>"; };
+		95E4DFC5234629070072E223 /* BankAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BankAlertView.swift; sourceTree = "<group>"; };
 		F32E5DB9279E085F76DF79B5 /* Pods-CashFlowGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CashFlowGame.release.xcconfig"; path = "Target Support Files/Pods-CashFlowGame/Pods-CashFlowGame.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -283,6 +285,7 @@
 		95DC1D03233F2EBF00155B97 /* AlertView */ = {
 			isa = PBXGroup;
 			children = (
+				95E4DFC5234629070072E223 /* BankAlertView.swift */,
 				95B2402D2344CFE40043DE67 /* FWAlertView.swift */,
 				95B2402C2344CFE40043DE67 /* FWPopupCategory.swift */,
 				95B2402A2344CFE40043DE67 /* FWPopupItem.swift */,
@@ -455,6 +458,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				95DC1D21233F4A5E00155B97 /* SettingController.swift in Sources */,
+				95E4DFC6234629070072E223 /* BankAlertView.swift in Sources */,
 				952843B22339C766008B9DA6 /* CRPopView.swift in Sources */,
 				952843B52339C766008B9DA6 /* ToziController.swift in Sources */,
 				95B240352344CFE40043DE67 /* FWPopupItem.swift in Sources */,
