@@ -13,9 +13,7 @@ extension HomeController{
         
 
         
-        //MARK: -   背景图片
-        self.view.addSubview(backImageView)
-        backImageView.frame = self.view.frame
+
         
         
         //MARK: -  每月现金流详情

@@ -183,7 +183,7 @@ public class SettingController: UIView {
             let btnCancel = UIButton(type: .system)
             btnCancel.bounds = CGRect.init(x: 0, y: 0, width: btnCancelWidth, height: btnCancelWidth)
             btnCancel.center = CGPoint.init(x: contentView.frame.maxX, y: contentView.frame.minY)
-            btnCancel.setImage(UIImage(named: "SettingController.bundle/zas_cancel.png", in: Bundle(for: SettingController.self), compatibleWith: nil)?.withRenderingMode(.alwaysOriginal), for: .normal)
+            btnCancel.setImage(UIImage(named: "Setting.bundle/zas_cancel.png", in: Bundle(for: SettingController.self), compatibleWith: nil)?.withRenderingMode(.alwaysOriginal), for: .normal)
             btnCancel.addTarget(self, action: #selector(cancelAlertAction), for: UIControl.Event.touchUpInside)
             self.addSubview(btnCancel)
             

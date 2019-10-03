@@ -54,6 +54,11 @@ class HomeController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //MARK: -   背景图片
+        self.view.addSubview(backImageView)
+        backImageView.frame = self.view.frame
+        
         drawMyView()
         //MARK: -  设置导航栏
         setUpUI()

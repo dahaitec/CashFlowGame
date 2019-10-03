@@ -66,6 +66,7 @@ class WorkingController: UIViewController, UITableViewDelegate, UITableViewDataS
         self.tableView.register(UINib(nibName: "WorkingTableViewCell", bundle: nil), forCellReuseIdentifier: "cellId")
         self.tableView.delegate = self
         self.tableView.dataSource = self
+
         
         // 设置导航栏
         setUpUI()
@@ -104,7 +105,7 @@ extension WorkingController {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 166.0
+        return 180.0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

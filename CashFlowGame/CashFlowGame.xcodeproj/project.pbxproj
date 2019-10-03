@@ -33,7 +33,7 @@
 		9578379B233CB1EA0080EBB7 /* detailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9578379A233CB1EA0080EBB7 /* detailView.swift */; };
 		9578379D233CC29B0080EBB7 /* personView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9578379C233CC29B0080EBB7 /* personView.swift */; };
 		9578379F233CCE520080EBB7 /* buttonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9578379E233CCE520080EBB7 /* buttonView.swift */; };
-		95B2402423447AA40043DE67 /* SettingController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 95B2402323447AA40043DE67 /* SettingController.bundle */; };
+		95B2402423447AA40043DE67 /* Setting.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 95B2402323447AA40043DE67 /* Setting.bundle */; };
 		95B240302344CFE40043DE67 /* FWPopupRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B240252344CFE30043DE67 /* FWPopupRootViewController.swift */; };
 		95B240312344CFE40043DE67 /* FWPopupWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B240262344CFE30043DE67 /* FWPopupWindow.swift */; };
 		95B240352344CFE40043DE67 /* FWPopupItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B2402A2344CFE40043DE67 /* FWPopupItem.swift */; };
@@ -48,6 +48,8 @@
 		95DC1D1B233F33E100155B97 /* personModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DC1D1A233F33E100155B97 /* personModel.swift */; };
 		95DC1D1D233F33F500155B97 /* detailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DC1D1C233F33F500155B97 /* detailModel.swift */; };
 		95DC1D21233F4A5E00155B97 /* SettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DC1D20233F4A5E00155B97 /* SettingController.swift */; };
+		95E4DFBF234606080072E223 /* BankController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E4DFBE234606080072E223 /* BankController.swift */; };
+		95E4DFC1234606240072E223 /* Bank.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 95E4DFC0234606240072E223 /* Bank.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,7 +82,7 @@
 		9578379A233CB1EA0080EBB7 /* detailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailView.swift; sourceTree = "<group>"; };
 		9578379C233CC29B0080EBB7 /* personView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = personView.swift; sourceTree = "<group>"; };
 		9578379E233CCE520080EBB7 /* buttonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buttonView.swift; sourceTree = "<group>"; };
-		95B2402323447AA40043DE67 /* SettingController.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SettingController.bundle; sourceTree = "<group>"; };
+		95B2402323447AA40043DE67 /* Setting.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Setting.bundle; sourceTree = "<group>"; };
 		95B240252344CFE30043DE67 /* FWPopupRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FWPopupRootViewController.swift; path = "../../../../../***实用***/FWPopupView/FWPopupView/FWPopupView/FWPopupView/FWPopupRootViewController.swift"; sourceTree = "<group>"; };
 		95B240262344CFE30043DE67 /* FWPopupWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FWPopupWindow.swift; path = "../../../../../***实用***/FWPopupView/FWPopupView/FWPopupView/FWPopupView/FWPopupWindow.swift"; sourceTree = "<group>"; };
 		95B2402A2344CFE40043DE67 /* FWPopupItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FWPopupItem.swift; path = "../../../../../***实用***/FWPopupView/FWPopupView/FWPopupView/FWPopupView/FWPopupItem.swift"; sourceTree = "<group>"; };
@@ -95,6 +97,8 @@
 		95DC1D1A233F33E100155B97 /* personModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = personModel.swift; sourceTree = "<group>"; };
 		95DC1D1C233F33F500155B97 /* detailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailModel.swift; sourceTree = "<group>"; };
 		95DC1D20233F4A5E00155B97 /* SettingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingController.swift; sourceTree = "<group>"; };
+		95E4DFBE234606080072E223 /* BankController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankController.swift; sourceTree = "<group>"; };
+		95E4DFC0234606240072E223 /* Bank.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Bank.bundle; sourceTree = "<group>"; };
 		F32E5DB9279E085F76DF79B5 /* Pods-CashFlowGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CashFlowGame.release.xcconfig"; path = "Target Support Files/Pods-CashFlowGame/Pods-CashFlowGame.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -152,6 +156,7 @@
 				952843902339C766008B9DA6 /* Financing */,
 				95DC1D1F233F4A1B00155B97 /* Shopping */,
 				95DC1D1E233F49EA00155B97 /* Setting */,
+				95E4DFBD234605B60072E223 /* Bank */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -291,7 +296,7 @@
 		95DC1D1E233F49EA00155B97 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
-				95B2402323447AA40043DE67 /* SettingController.bundle */,
+				95B2402323447AA40043DE67 /* Setting.bundle */,
 				95DC1D20233F4A5E00155B97 /* SettingController.swift */,
 			);
 			path = Setting;
@@ -302,6 +307,15 @@
 			children = (
 			);
 			path = Shopping;
+			sourceTree = "<group>";
+		};
+		95E4DFBD234605B60072E223 /* Bank */ = {
+			isa = PBXGroup;
+			children = (
+				95E4DFC0234606240072E223 /* Bank.bundle */,
+				95E4DFBE234606080072E223 /* BankController.swift */,
+			);
+			path = Bank;
 			sourceTree = "<group>";
 		};
 		AA5A55E10984079D6A2643DB /* Frameworks */ = {
@@ -383,10 +397,11 @@
 			files = (
 				952843352339C709008B9DA6 /* LaunchScreen.storyboard in Resources */,
 				952843322339C709008B9DA6 /* Assets.xcassets in Resources */,
-				95B2402423447AA40043DE67 /* SettingController.bundle in Resources */,
+				95B2402423447AA40043DE67 /* Setting.bundle in Resources */,
 				9534C673233F8D52005283EC /* WorkingTableViewCell.xib in Resources */,
 				95B240422344ED590043DE67 /* Working.bundle in Resources */,
 				954A0930233FA167001E188E /* Main.storyboard in Resources */,
+				95E4DFC1234606240072E223 /* Bank.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,6 +484,7 @@
 				95B2403A2344CFE40043DE67 /* FWPopupView.swift in Sources */,
 				952843AC2339C766008B9DA6 /* HomeController.swift in Sources */,
 				954A0934233FA6D8001E188E /* SubViewController.swift in Sources */,
+				95E4DFBF234606080072E223 /* BankController.swift in Sources */,
 				95B240372344CFE40043DE67 /* FWPopupCategory.swift in Sources */,
 				95B240302344CFE40043DE67 /* FWPopupRootViewController.swift in Sources */,
 				95B240312344CFE40043DE67 /* FWPopupWindow.swift in Sources */,

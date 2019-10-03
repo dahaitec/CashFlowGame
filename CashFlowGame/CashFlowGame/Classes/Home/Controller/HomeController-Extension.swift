@@ -15,10 +15,7 @@ extension HomeController{
 
             case 1:
                 // MARK: -  银行按钮
-                let alertView = FWAlertView.alert(title: "银  行", detail: "你点击了银行") { (popupView, index, title) in
-                    print("点击了确定")
-                }
-                alertView.show()
+                BankController.show()
 
 
             case 2:
