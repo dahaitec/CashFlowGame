@@ -38,9 +38,10 @@ class BankAlertView: UIView,UITextFieldDelegate {
     
     var moneyInfor : String?
     var alertText  : String?
-    var moneyF     : CGFloat?
+    var moneyF     : CGFloat = 0
     var isRight    : Bool = false
-
+    let sureBtn = UIButton.init(type: .custom)
+    
     override init(frame: CGRect) {
             super.init(frame: frame)
     //        self.frame = UIScreen.main.bounds
@@ -65,7 +66,7 @@ class BankAlertView: UIView,UITextFieldDelegate {
             
             titleLabel = UILabel(frame:CGRect(x:0,y:0,width:PAYMENT_WIDTH,height:TITLE_HEIGHT))
             titleLabel?.textAlignment = .center
-            titleLabel?.font = UIFont.systemFont(ofSize: 25)
+            titleLabel?.font = UIFont.systemFont(ofSize: 20)
 
             titleLabel?.text = self.alertText
             paymentAlert?.addSubview(titleLabel!)
@@ -118,7 +119,7 @@ class BankAlertView: UIView,UITextFieldDelegate {
                 line.backgroundColor = UIColor.init(red: 0.9, green: 0.9, blue: 0.9, alpha: 1)
                 inputsView?.addSubview(line)
             }
-            let sureBtn = UIButton.init(type: .custom)
+  
             sureBtn.frame = CGRect(x:15,y:150,width:(inputsView?.frame.size.width)!,height:40)
             sureBtn.backgroundColor = UIColor.orange
             sureBtn.setTitle("确认", for: .normal)
@@ -136,6 +137,11 @@ class BankAlertView: UIView,UITextFieldDelegate {
 
         moneyLabel?.text = self.moneyInfor
         titleLabel?.text = self.alertText
+        if moneyF == 0 {
+            pwdTextField?.isEnabled = false
+            sureBtn.isEnabled = false
+        }
+        
         
         paymentAlert?.transform = CGAffineTransform(scaleX: 1.21, y: 1.21)
         paymentAlert?.alpha = 0
@@ -217,7 +223,7 @@ class BankAlertView: UIView,UITextFieldDelegate {
         }
         
         let inputMoney = CGFloat.init(Float(totalStr!) ??  0)
-        let moneyFo    = CGFloat.init(Float(moneyF!))
+        let moneyFo    = CGFloat.init(Float(moneyF))
         if inputMoney > moneyFo {
             isRight = false
             let alert = UIAlertView.init(title: "提示", message: "请输入正确金额", delegate: self, cancelButtonTitle: "OK")

@@ -50,10 +50,8 @@ class DagongController: UIViewController {
     private func setUpUI() -> Void
     {
           self.navigationItem.title = "投资理财"
-          let buttonItem: UIBarButtonItem = UIBarButtonItem(image: UIImage(named: "Working.bundle/edit_undo.png"), style: .plain, target: self, action: #selector(leftBtnAction))
-          buttonItem.tintColor = UIColor.black
-
-          self.navigationItem.leftBarButtonItem = buttonItem
+//          let buttonItem: UIBarButtonItem = UIBarButtonItem(image: UIImage(named: "Working.bundle/edit_undo.png"), style: .plain, target: self, action: #selector(leftBtnAction))
+//          self.navigationItem.leftBarButtonItem = buttonItem
           let buttonItem2: UIBarButtonItem = UIBarButtonItem(title: "可用资金：10000", style: .plain, target: self, action: nil)
           buttonItem2.tintColor = UIColor.white
           self.navigationItem.rightBarButtonItem = buttonItem2

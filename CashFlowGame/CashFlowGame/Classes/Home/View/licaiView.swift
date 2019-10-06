@@ -35,7 +35,7 @@ let xiuxiButton: UIButton = {
 // MARK: -  投资理财
 let touziButton: UIButton = {
 
-    let button = UIButton(frame: CGRect(x: CGFloat(ScreenInfo.Width/2) - 50 , y: 10, width: licaiWidth, height: licaiHeight))
+    let button = UIButton(frame: CGRect(x: CGFloat(kScreenW/2) - 50 , y: 10, width: licaiWidth, height: licaiHeight))
     button.layer.cornerRadius = 5.0
     button.backgroundColor = UIColor(red: 34 / 255, green: 153 / 255, blue: 238 / 255, alpha: 1)
     button.setTitleColor(UIColor.white, for: .normal)
@@ -49,7 +49,7 @@ let touziButton: UIButton = {
 
 // MARK: -  职场打工
 let dagongButton: UIButton = {
-    let button = UIButton(frame: CGRect(x: CGFloat(ScreenInfo.Width) - licaiWidth - 30  , y:10, width: licaiWidth, height: licaiHeight))
+    let button = UIButton(frame: CGRect(x: CGFloat(kScreenW) - licaiWidth - 30  , y:10, width: licaiWidth, height: licaiHeight))
     button.layer.cornerRadius = 5.0
     button.backgroundColor = UIColor(red: 34 / 255, green: 153 / 255, blue: 238 / 255, alpha: 1)
     button.setTitleColor(UIColor.white, for: .normal)
@@ -66,7 +66,7 @@ let dagongButton: UIButton = {
 
 // MARK: -  理财
 let licailUIView: UIView = {
-    let detailView = UIView(frame: CGRect(x: 10, y: ScreenInfo.Width/2 + 50  , width: ScreenInfo.Width - 20, height: 50))
+    let detailView = UIView(frame: CGRect(x: 10, y: kScreenW/2 + 50  , width: kScreenW - 20, height: 50))
 
     //设置背景色
    

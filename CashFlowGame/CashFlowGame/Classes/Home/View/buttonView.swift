@@ -33,7 +33,7 @@ public let  buttonWidth :  CGFloat = 100
 public let  buttonHeight : CGFloat = 20
 public let  buttonX1 : CGFloat = 10
 public let  buttonY1 : CGFloat = 10
-public let  buttonX2 : CGFloat = ScreenInfo.Width/2 - 100
+public let  buttonX2 : CGFloat = kScreenW/2 - 100
 public let  buttonY2 : CGFloat = 20
 
 // MARK: -  银行按钮 第一排 1
@@ -157,7 +157,7 @@ let carShopButton: UIButton = {
 
 // MARK: -  个人情况
 let buttionUIView: UIView = {
-    let  buttonView = UIView(frame: CGRect(x:ScreenInfo.Width/2 + 20, y: 30, width: ScreenInfo.Width/2 - 30, height: 170))
+    let  buttonView = UIView(frame: CGRect(x:kScreenW/2 + 20, y: 30, width:kScreenH/2 - 30, height: 170))
     
     //设置背景色
     

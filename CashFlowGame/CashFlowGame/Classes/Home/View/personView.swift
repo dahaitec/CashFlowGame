@@ -29,7 +29,7 @@ public let  LabelFieldY : CGFloat = 10
 
 
 //MARK：- 文本输入框长宽
-public let  TextFieldWidth :  CGFloat = 60
+public let  TextFieldWidth :  CGFloat = kScreenW/2 - 100
 public let  TextFieldHeight : CGFloat = 20
 public let  TextFieldX : CGFloat = 90
 public let  TextFieldY : CGFloat = 10
@@ -84,10 +84,14 @@ let mingshengLabel: UILabel = {
 //--------------------------------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------------------------------
+
+
+
+
 // MARK: -  现金
 let cashTextField: UITextField = {
     let textField = UITextField(frame: CGRect(x: TextFieldX, y: TextFieldY, width: TextFieldWidth, height: TextFieldHeight))
-    textField.text = "100"
+    textField.text = String(xianjinValue)
     textField.isEnabled = false
     //textField.backgroundColor = UIColor.green
     return textField
@@ -96,7 +100,7 @@ let cashTextField: UITextField = {
 // MARK: -  现金流
 let cashFLowTextField: UITextField = {
     let textField = UITextField(frame: CGRect(x: TextFieldX, y: TextFieldY + 30, width: TextFieldWidth, height: TextFieldHeight))
-    textField.text = "100"
+    textField.text = String(xianjinliuValue)
     textField.isEnabled = false
     //textField.backgroundColor = UIColor.green
     return textField
@@ -105,7 +109,7 @@ let cashFLowTextField: UITextField = {
 // MARK: -  健康
 let jiankangTextField: UITextField = {
     let textField = UITextField(frame: CGRect(x: TextFieldX, y: TextFieldY + 60, width: TextFieldWidth, height: TextFieldHeight))
-    textField.text = "100"
+    textField.text = String(jiankangValue)
     textField.isEnabled = false
     //textField.backgroundColor = UIColor.green
     return textField
@@ -114,7 +118,7 @@ let jiankangTextField: UITextField = {
 // MARK: -  心情
 let xinqingTextField: UITextField = {
     let textField = UITextField(frame: CGRect(x:TextFieldX, y: TextFieldY + 90, width: TextFieldWidth, height: TextFieldHeight))
-    textField.text = "100"
+    textField.text = String(xinqingValue)
     textField.isEnabled = false
     //textField.backgroundColor = UIColor.green
     return textField
@@ -123,7 +127,7 @@ let xinqingTextField: UITextField = {
 // MARK: -  名声
 let mingshengTextField: UITextField = {
     let textField = UITextField(frame: CGRect(x: TextFieldX, y: TextFieldY + 120, width: TextFieldWidth, height: TextFieldHeight))
-    textField.text = "100"
+    textField.text = String(mingshengValue)
     textField.isEnabled = false
     //textField.backgroundColor = UIColor.green
     return textField
@@ -131,7 +135,7 @@ let mingshengTextField: UITextField = {
 
 // MARK: -  个人情况
 let personUIView: UIView = {
-    let  personView = UIView(frame: CGRect(x: 10, y: 30, width: ScreenInfo.Width/2, height: 170))
+    let  personView = UIView(frame: CGRect(x: 10, y: 30, width: kScreenW/2, height: 170))
     
     //设置背景色
     

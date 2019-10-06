@@ -40,9 +40,9 @@ public class SettingController: UIView {
     let ReStartButton: UIButton = {
         let button = UIButton(frame: CGRect(x: 10, y: 30 , width: btnWidth, height: btnHeight))
         button.clipsToBounds = true
-        button.layer.cornerRadius = 20.0
-        button.backgroundColor = UIColor(red: 34 / 255, green: 153 / 255, blue: 238 / 255, alpha: 1)
-        button.setTitleColor(UIColor.white, for: .normal)
+        button.titleLabel?.font = UIFont.systemFont(ofSize: 20)
+        button.layer.cornerRadius = 5
+        button.backgroundColor =  UIColor.orange
         button.setTitle("重新开始", for: .normal)
         button.addTarget(self, action: #selector(ReStartAction), for: UIControl.Event.touchUpInside)
         return button
@@ -51,9 +51,9 @@ public class SettingController: UIView {
     let EndButton: UIButton = {
         let button = UIButton(frame: CGRect(x: 10, y:90, width: btnWidth, height: btnHeight))
         button.clipsToBounds = true
-        button.layer.cornerRadius = 20.0
-        button.backgroundColor = UIColor(red: 34 / 255, green: 153 / 255, blue: 238 / 255, alpha: 1)
-        button.setTitleColor(UIColor.white, for: .normal)
+        button.titleLabel?.font = UIFont.systemFont(ofSize: 20)
+        button.layer.cornerRadius = 5
+        button.backgroundColor =  UIColor.orange
         button.setTitle("结束游戏", for: .normal)
         button.addTarget(self, action: #selector(EndAction), for: UIControl.Event.touchUpInside)
         return button
@@ -62,9 +62,9 @@ public class SettingController: UIView {
     let LearnButton: UIButton = {
         let button = UIButton(frame: CGRect(x: 10, y: 150, width: btnWidth, height: btnHeight))
         button.clipsToBounds = true
-        button.layer.cornerRadius = 20.0
-        button.backgroundColor = UIColor(red: 34 / 255, green: 153 / 255, blue: 238 / 255, alpha: 1)
-        button.setTitleColor(UIColor.white, for: .normal)
+        button.titleLabel?.font = UIFont.systemFont(ofSize: 20)
+        button.layer.cornerRadius = 5
+        button.backgroundColor =  UIColor.orange
         button.setTitle("游戏教程", for: .normal)
         button.addTarget(self, action: #selector(LearnAction), for: UIControl.Event.touchUpInside)
         return button
@@ -73,24 +73,25 @@ public class SettingController: UIView {
     let ReviewButton: UIButton = {
         let button = UIButton(frame: CGRect(x: 290 - 150, y: 150, width:btnWidth, height: btnHeight))
         button.clipsToBounds = true
-        button.layer.cornerRadius = 20.0
-        button.backgroundColor = UIColor(red: 34 / 255, green: 153 / 255, blue: 238 / 255, alpha: 1)
-        button.setTitleColor(UIColor.white, for: .normal)
+        button.titleLabel?.font = UIFont.systemFont(ofSize: 20)
+        button.layer.cornerRadius = 5
+        button.backgroundColor =  UIColor.orange
         button.setTitle("评   论", for: .normal)
         button.addTarget(self, action: #selector(ReviewAction), for: UIControl.Event.touchUpInside)
         return button
     }()
 
     // MARK: -  音乐
-    let YinyueLabel: UILabel = {
-        let label = UILabel(frame: CGRect(x: 290 - 150, y: 30, width:40, height: btnHeight))
-        label.text = "音乐"
-        label.layer.cornerRadius = 30.0
-        label.textColor=UIColor.white
-        label.backgroundColor =  UIColor(red: 34 / 255, green: 153 / 255, blue: 238 / 255, alpha: 1)
-        //label.font = UIFont.boldSystemFont(ofSize: 18)
+    let YinyueLabel: UIButton = {
 
-        return label
+        let button = UIButton(frame: CGRect(x: 290 - 150, y: 30, width:50, height: btnHeight))
+        button.clipsToBounds = true
+        button.titleLabel?.font = UIFont.systemFont(ofSize: 20)
+        button.layer.cornerRadius = 5
+        button.backgroundColor =  UIColor.orange
+        button.setTitle("音乐", for: .normal)
+        button.addTarget(self, action: #selector(YinYueBAction), for: UIControl.Event.touchUpInside)
+        return button
     }()
     
     let YinyueButton: UISwitch = {
@@ -108,15 +109,16 @@ public class SettingController: UIView {
     
     
     // MARK: -  声音
-    let ShengyinLabel: UILabel = {
-        let label = UILabel(frame: CGRect(x: 290 - 150, y: 90, width:40, height: btnHeight))
-        label.text = "声音"
-        label.layer.cornerRadius = 30.0
-        label.textColor=UIColor.white
-        label.backgroundColor =  UIColor(red: 34 / 255, green: 153 / 255, blue: 238 / 255, alpha: 1)
-        //label.font = UIFont.boldSystemFont(ofSize: 18)
+    let ShengyinLabel: UIButton = {
 
-        return label
+        let button = UIButton(frame: CGRect(x: 290 - 150, y: 90, width:50, height: btnHeight))
+        button.clipsToBounds = true
+        button.titleLabel?.font = UIFont.systemFont(ofSize: 20)
+        button.layer.cornerRadius = 5
+        button.backgroundColor =  UIColor.orange
+        button.setTitle("声音", for: .normal)
+        button.addTarget(self, action: #selector(ShengyinBAction), for: UIControl.Event.touchUpInside)
+        return button
     }()
     
     let ShengyinButton: UISwitch = {
@@ -165,7 +167,7 @@ public class SettingController: UIView {
         
         let contentView = UIView(frame: CGRect.init(x: 0, y: 0, width: 290, height: 220))
         contentView.center = self.center
-        contentView.backgroundColor = UIColor.init(r: 255, g: 210, b: 102, alpha: 1)
+        contentView.backgroundColor = UIColor.init(white: 1.0, alpha: 0.95)
         contentView.layer.cornerRadius = 50.0
         self.addSubview(contentView)
    
@@ -178,6 +180,13 @@ public class SettingController: UIView {
         contentView.addSubview(YinyueLabel)
         contentView.addSubview(YinyueButton)
         contentView.addSubview(ShengyinButton)
+        
+        let imageIcon = UIButton(type: .system)
+        imageIcon.bounds = CGRect.init(x: 0, y: 0, width: 200, height: 100)
+        imageIcon.center = CGPoint.init(x: contentView.frame.midX, y: contentView.frame.minY - 20)
+        imageIcon.setImage(UIImage(named: "Setting.bundle/setting.png", in: Bundle(for: SettingController.self), compatibleWith: nil)?.withRenderingMode(.alwaysOriginal), for: .normal)
+        imageIcon.isEnabled = false
+        self.addSubview(imageIcon)
         
         if !upMustUpdate {
             let btnCancel = UIButton(type: .system)
@@ -223,7 +232,7 @@ public class SettingController: UIView {
     
     @objc private func ReviewAction() -> Void
     {
-            print("评   论")
+
         let appUrl = String(format:"https://www.apple.com")
         let url = URL(string: appUrl)
         if #available(iOS 10.0, *) {
@@ -232,24 +241,47 @@ public class SettingController: UIView {
             UIApplication.shared.openURL(url!)
         }
     }
-    @IBAction func YinyueAction(_ sender: Any) {
+    
+    @objc private func YinYueBAction() -> Void {
+            if YinyueButton.isOn {
+               YinyueButton.setOn(false, animated: true)
+
+            }else {
+               YinyueButton.setOn(true, animated: true)
+        }
+                YinyueAction()
+    }
+    
+    @objc private func ShengyinBAction() -> Void {
+            if ShengyinButton.isOn {
+               ShengyinButton.setOn(false, animated: true)
+
+            }else {
+               ShengyinButton.setOn(true, animated: true)
+        }
+                ShengyinAction()
+    }
+    
+    @IBAction func YinyueAction() {
         if YinyueButton.isOn {
+
             defaults.set("on", forKey: "yinyue")
             print("yinyue on")
         }else{
             defaults.set("off", forKey: "yinyue")
             print("yinyue off")
-
         }
+            homecontroller.OnOffMuisc()
     }
     
-    @IBAction func ShengyinAction(_ sender: Any) {
-        if YinyueButton.isOn {
+    @IBAction func ShengyinAction() {
+        if ShengyinButton.isOn {
            defaults.set("on", forKey: "shengyin")
            print("shengyin on")
         }else{
            defaults.set("off", forKey: "shengyin")
            print("shengyin off")
         }
+          homecontroller.buttonSound()
     }
 }

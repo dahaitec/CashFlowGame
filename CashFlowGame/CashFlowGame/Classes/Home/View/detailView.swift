@@ -23,7 +23,7 @@ public let  xianjinliuFieldX      : CGFloat = 90
 
 // MARK: -  现金流
 let xianjinliuText: UITextField = {
-    let textField = UITextField(frame: CGRect(x: ScreenInfo.Width/2 - 70, y: 10, width: xianjinliuFieldWidth, height: xianjinliuHeight))
+    let textField = UITextField(frame: CGRect(x: kScreenW/2 - 70, y: 10, width: xianjinliuFieldWidth, height: xianjinliuHeight))
     textField.text = "每周现金流详情"
     textField.isEnabled = false
 
@@ -126,7 +126,7 @@ let beidongshouruText: UITextField = {
 
 // MARK: -  成就
 let chengjiuText: UITextField = {
-    let textField = UITextField(frame: CGRect(x: ScreenInfo.Width/2 - 20, y: 130, width: xianjinliuWidth, height: xianjinliuFieldHeight))
+    let textField = UITextField(frame: CGRect(x: kScreenW/2 - 20, y: 130, width: xianjinliuWidth, height: xianjinliuFieldHeight))
     textField.text = "成就"
     textField.isEnabled = false
     
@@ -187,7 +187,7 @@ let nvpengyouText: UITextField = {
 
 // MARK: -  详情
 let detailUIView: UIView = {
-    let detailView = UIView(frame: CGRect(x: 10, y: ScreenInfo.Height/2  , width: ScreenInfo.Width - 20, height: 250))
+    let detailView = UIView(frame: CGRect(x: 10, y: kScreenH/2  , width: kScreenW - 20, height: 250))
 
     //设置背景色
    
